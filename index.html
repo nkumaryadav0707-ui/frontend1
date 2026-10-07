@@ -1,0 +1,482 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nandkishor Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🛍️ Nandkishor Store
+        </div>
+
+        <div class="nav-right">
+
+            <button id="themeBtn">🌙</button>
+
+            <button id="cartBtn">
+                🛒 Cart
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div>
+            <h1>Find Your Perfect Product</h1>
+
+            <p>
+                Discover quality products at amazing prices.
+            </p>
+
+            <button onclick="scrollToProducts()" class="shop-btn">
+                Shop Now
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search products..."
+        >
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <main>
+
+        <h2 class="section-title" id="products">
+            Our Products
+        </h2>
+
+        <div class="product-grid" id="productGrid">
+
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card" data-name="Running Shoes">
+
+                <div class="image-container">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600"
+                        alt="Running Shoes"
+                    >
+
+                    <span class="discount-badge">
+                        33% OFF
+                    </span>
+
+                    <button
+                        class="wishlist"
+                        onclick="toggleWishlist(this)"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>Running Shoes</h3>
+
+                <p>
+                    Comfortable and stylish shoes for running
+                    and everyday use.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>4.8</span>
+                </div>
+
+                <div class="price">
+                    ₹1,999
+                    <del>₹2,999</del>
+                </div>
+
+                <div class="stock">
+                    🟢 In Stock
+                </div>
+
+                <button
+                    class="cart-btn"
+                    onclick="addToCart('Running Shoes', 1999)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card" data-name="Smart Watch">
+
+                <div class="image-container">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+                        alt="Smart Watch"
+                    >
+
+                    <span class="discount-badge">
+                        38% OFF
+                    </span>
+
+                    <button
+                        class="wishlist"
+                        onclick="toggleWishlist(this)"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>Smart Watch</h3>
+
+                <p>
+                    Fitness tracking, notifications and
+                    modern smart features.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                    <span>4.5</span>
+                </div>
+
+                <div class="price">
+                    ₹2,499
+                    <del>₹3,999</del>
+                </div>
+
+                <div class="stock">
+                    🟢 In Stock
+                </div>
+
+                <button
+                    class="cart-btn"
+                    onclick="addToCart('Smart Watch', 2499)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card" data-name="Wireless Headphones">
+
+                <div class="image-container">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
+                        alt="Wireless Headphones"
+                    >
+
+                    <span class="discount-badge">
+                        28% OFF
+                    </span>
+
+                    <button
+                        class="wishlist"
+                        onclick="toggleWishlist(this)"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>Wireless Headphones</h3>
+
+                <p>
+                    Powerful sound with comfortable wireless
+                    listening experience.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>4.9</span>
+                </div>
+
+                <div class="price">
+                    ₹1,799
+                    <del>₹2,499</del>
+                </div>
+
+                <div class="stock">
+                    🟢 In Stock
+                </div>
+
+                <button
+                    class="cart-btn"
+                    onclick="addToCart('Wireless Headphones', 1799)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+            <div class="product-card" data-name="Smartphone">
+
+                <div class="image-container">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600"
+                        alt="Smartphone"
+                    >
+
+                    <span class="discount-badge">
+                        21% OFF
+                    </span>
+
+                    <button
+                        class="wishlist"
+                        onclick="toggleWishlist(this)"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>Smartphone</h3>
+
+                <p>
+                    Powerful smartphone with excellent camera
+                    and performance.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                    <span>4.6</span>
+                </div>
+
+                <div class="price">
+                    ₹14,999
+                    <del>₹18,999</del>
+                </div>
+
+                <div class="stock">
+                    🟢 In Stock
+                </div>
+
+                <button
+                    class="cart-btn"
+                    onclick="addToCart('Smartphone', 14999)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+            <div class="product-card" data-name="Laptop">
+
+                <div class="image-container">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=600"
+                        alt="Laptop"
+                    >
+
+                    <span class="discount-badge">
+                        17% OFF
+                    </span>
+
+                    <button
+                        class="wishlist"
+                        onclick="toggleWishlist(this)"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>Laptop</h3>
+
+                <p>
+                    Fast and reliable laptop for study,
+                    programming and work.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>4.8</span>
+                </div>
+
+                <div class="price">
+                    ₹49,999
+                    <del>₹59,999</del>
+                </div>
+
+                <div class="stock">
+                    🟢 In Stock
+                </div>
+
+                <button
+                    class="cart-btn"
+                    onclick="addToCart('Laptop', 49999)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+            <div class="product-card" data-name="Casual Sneakers">
+
+                <div class="image-container">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600"
+                        alt="Casual Sneakers"
+                    >
+
+                    <span class="discount-badge">
+                        34% OFF
+                    </span>
+
+                    <button
+                        class="wishlist"
+                        onclick="toggleWishlist(this)"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>Casual Sneakers</h3>
+
+                <p>
+                    Trendy sneakers designed for comfort and
+                    everyday style.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                    <span>4.4</span>
+                </div>
+
+                <div class="price">
+                    ₹2,299
+                    <del>₹3,499</del>
+                </div>
+
+                <div class="stock">
+                    🟢 In Stock
+                </div>
+
+                <button
+                    class="cart-btn"
+                    onclick="addToCart('Casual Sneakers', 2299)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- CONTACT -->
+    <section class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Have any questions? Get in touch with us.</p>
+
+        <p>
+            👤 <strong>Nandkishor Yadav</strong>
+        </p>
+
+        <p>
+            📧
+            <a href="mailto:nkumaryadav0707@gmail.com">
+                nkumaryadav0707@gmail.com
+            </a>
+        </p>
+
+        <p>
+            📞
+            <a href="tel:9670545998">
+                9670545998
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- CART PANEL -->
+    <div id="cartPanel" class="cart-panel">
+
+        <div class="cart-header">
+
+            <h2>🛒 Your Cart</h2>
+
+            <button onclick="closeCart()">✕</button>
+
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+
+            Total:
+            ₹<span id="cartTotal">0</span>
+
+        </div>
+
+        <button
+            class="checkout-btn"
+            onclick="checkout()"
+        >
+            Proceed to Checkout
+        </button>
+
+    </div>
+
+
+    <!-- NOTIFICATION -->
+    <div id="notification"></div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Nandkishor Store | All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
