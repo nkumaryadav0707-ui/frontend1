@@ -5,9 +5,6 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=B.Tech+3rd+Year+%7C+CSE+Student;Aspiring+Full-Stack+Developer;Java+%7C+DSA+%7C+Web+Development;Learn+%E2%86%92+Build+%E2%86%92+Improve+%E2%86%92+Repeat+%F0%9F%9A%80" alt="Typing Animation"/>
 
 <br>
-
-<img src="https://komarev.com/ghpvc/?nkumaryadav0707=NandkishorYadav&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile Views"/>
-
 </div>
 
 ---
